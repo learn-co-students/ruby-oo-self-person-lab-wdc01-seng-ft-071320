@@ -1,6 +1,6 @@
 # your code goes here
 
-class person 
+class Person 
 
     attr_reader :name
     attr_accessor :bankaccount , :happiness , :hygiene 
@@ -51,3 +51,4 @@ class person
         puts "blah blah blah blah blah"
         end
     end
+end
