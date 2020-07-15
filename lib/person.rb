@@ -46,32 +46,32 @@ class Person
     end
     
     def take_bath
-        self.hygiene= (self.hygiene + 4)
+        self.hygiene= (@hygiene + 4)
         "♪ Rub-a-dub just relaxing in the tub ♫"
     end
 
     def work_out
-        self.hygiene= (self.hygiene - 3)
-        self.happiness= (self.happiness + 2)
+        self.hygiene= (@hygiene - 3)
+        self.happiness= (@happiness + 2)
         "♪ another one bites the dust ♫"
     end
     
     def call_friend(friend)
         # binding.pry
         friend.happiness= (friend.happiness + 3)
-        self.happiness= (self.happiness + 3)
+        self.happiness= (@happiness + 3)
         # binding.pry
-        "Hi #{friend.name}! It's #{self.name}. How are you?"
+        "Hi #{friend.name}! It's #{@name}. How are you?"
     end
 
     def start_conversation(person, topic)
         if topic == "politics"
             person.happiness= (person.happiness - 2)
-            self.happiness= (self.happiness - 2)
+            self.happiness= (@happiness - 2)
             "blah blah partisan blah lobbyist"
         elsif topic == "weather"
             person.happiness= (person.happiness + 1)
-            self.happiness= (self.happiness + 1)
+            self.happiness= (@happiness + 1)
             "blah blah sun blah rain"
         else
             "blah blah blah blah blah"
