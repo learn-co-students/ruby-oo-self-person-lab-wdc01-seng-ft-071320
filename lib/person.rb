@@ -1,6 +1,10 @@
 # your code goes here
 
+<<<<<<< HEAD
 require 'pry'
+=======
+class Person 
+>>>>>>> 9ad2af9f6f22b794a39b3f71aea9a018f251093f
 
 class Person 
 
