@@ -51,13 +51,11 @@ class Person
     end
 
     def work_out
-        self.happiness= (self.happiness + 2)
-        self.hygiene= (self.hygiene - 3)
-        return "♪ another one bites the dust ♫"
+        
     end
     
-    # def call_friend
-    # end
+    def call_friend
+    end
 
 end
 
